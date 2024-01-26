@@ -129,24 +129,16 @@ if directory_name == "Door10":
 current_directory = os.path.basename(os.getcwd())
 script_path = os.path.join(current_directory, "ezskript.py")
 
-current_directory = os.getcwd()
 current_directory1 = os.getcwd()
 door10_path = os.path.join(current_directory1, "Door10")
 
-if not os.path.exists(door10_path):
-    door11_path = os.path.join(current_directory, "Door11")
-    os.mkdir(door11_path)
+door11_path = os.path.join(current_directory1, "Door11")  # Define door11_path variable
+
+if directory_name == "my_file_system":
+    if not os.path.exists(door10_path):
+        os.mkdir(door11_path)
     
-current_directory2 = '\my_file_system'
-door11_path = os.path.join(current_directory, "Door11")
-if not os.path.exists(door11_path):
-    os.mkdir(door11_path)
-
-
-if os.path.exists(door11_path):
-    file_path = os.path.join(door11_path, "Actualanswer.txt")
-    with open(file_path, 'w', encoding='utf-8') as file:
-        file.write("hopefully you have your other keys ὢ")
-
-
-
+    if os.path.exists(door11_path):
+        file_path = os.path.join(door11_path, "Actualanswer.txt")
+        with open(file_path, 'w', encoding='utf-8') as file:
+            file.write("hopefully you have your other keys ὢ")
