@@ -117,7 +117,6 @@ for directory in os.listdir(current_directory):
         shutil.copy(script_path, destination)
 # last key
 if directory_name == "Door10":
-    
     try:
         with open('answer', 'w', encoding='utf-8') as file: 
             file.write("Delete Door10. Run Script. ")
