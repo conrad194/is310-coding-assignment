@@ -6,7 +6,7 @@ import re
 import os
 
 class TypewriterPrint:
-    def __init__(self, text, delay=0.05):
+    def __init__(self, text, delay=0.01):
         self.text = text
         self.delay = delay
 
@@ -89,12 +89,12 @@ directory_name = os.path.basename(os.getcwd())
 
 
 if directory_name == "my_file_system":
-    typewriter_print = TypewriterPrint("Hello Welcome to the Maze!")
+    typewriter_print = TypewriterPrint("Hello Welcome to the Maze! There is only one copy of this skript, which is in this directory. Some doors may require you to run the script, if that is the case you wanna run the script in THAT door so you are going to have to do something with the path.")
     typewriter_print.print_text()
     checker = PasscodeChecker()
     checker.check_passcode()
 elif directory_name == "maze_KO":
-    typewriter_print = TypewriterPrint("Whats wrong!!")
+    typewriter_print = TypewriterPrint("If you are getting this output than you are on the right track")
     typewriter_print.print_text()
 elif directory_name == "Door5":
     typewriter_print = TypewriterPrint("Create a file name yes in this directory and run the scipt. ")
@@ -133,12 +133,6 @@ current_directory = os.path.basename(os.getcwd())
 script_path = os.path.join(current_directory, "ezskript.py")
 
 current_directory = os.getcwd()
-script_path = os.path.join(current_directory, "ezskript.py")
-for directory in os.listdir(current_directory):
-    if os.path.isdir(directory):
-        destination = os.path.join(current_directory, directory, "ezskript.py")
-        shutil.copy(script_path, destination)
-
 current_directory1 = os.getcwd()
 door10_path = os.path.join(current_directory1, "Door10")
 
