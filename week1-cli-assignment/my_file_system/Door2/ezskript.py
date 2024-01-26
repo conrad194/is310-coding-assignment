@@ -137,15 +137,17 @@ if directory_name == "Door10":
     
     try:
         with open('answer', 'w', encoding='utf-8') as file: 
-            file.write("Sorry last thing. Delete Door10")
+            file.write("Delete Door10. Run Script. ")
     except Exception as e:
         # If the file doesn't exist...
         with open('answer', 'w', encoding='utf-8') as file:
-            file.write("Sorry last thing. Delete Door10")
+            file.write("Delete Door10. Run Script.")
 
 current_directory = os.path.basename(os.getcwd())
 script_path = os.path.join(current_directory, "ezskript.py")
 
+current_directory = os.getcwd()
+script_path = os.path.join(current_directory, "ezskript.py")
 for directory in os.listdir(current_directory):
     if os.path.isdir(directory):
         destination = os.path.join(current_directory, directory, "ezskript.py")
@@ -165,16 +167,6 @@ if os.path.exists(door11_path):
     file_path = os.path.join(door11_path, "Actualanswer.txt")
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write("hopefully you have your other keys ὢ")
-
-
-    
-current_directory = os.getcwd()
-script_path = os.path.join(current_directory, "ezskript.py")
-
-for directory in os.listdir(current_directory):
-    if os.path.isdir(directory):
-        destination = os.path.join(current_directory, directory, "ezskript.py")
-        shutil.copy(script_path, destination)
 
 
 

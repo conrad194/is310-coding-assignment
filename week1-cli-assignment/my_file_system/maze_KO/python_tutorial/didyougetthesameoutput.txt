@@ -1,6 +1,0 @@
-
-- python ezskript.py
-
--Thats the windows version
--The skript name will always be the same, just depending where you are in the directory depends which part of the script you get
--Thats it...
