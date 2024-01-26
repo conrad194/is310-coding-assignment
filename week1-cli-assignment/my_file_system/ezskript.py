@@ -93,36 +93,22 @@ if directory_name == "my_file_system":
     typewriter_print.print_text()
     checker = PasscodeChecker()
     checker.check_passcode()
-elif directory_name == "GoThrougHere":
-    typewriter_print = TypewriterPrint("Ready?")
-    typewriter_print.print_text()
-    checker = PasscodeChecker()
-    checker.check_passcode()
 elif directory_name == "maze_KO":
     typewriter_print = TypewriterPrint("Whats wrong!!")
     typewriter_print.print_text()
 elif directory_name == "Door5":
-    typewriter_print = TypewriterPrint("wow you made it here, congrats, you learned how to use a python script in a terminal")
+    typewriter_print = TypewriterPrint("Create a file name yes in this directory and run the scipt. ")
     typewriter_print.print_text()
-    typewriter_print = TypewriterPrint('Press any key to continue...')
-    typewriter_print.print_text()
-    input()
-elif directory_name == "Door3":
-    typewriter_print = TypewriterPrint("wow you made it here, congrats, you learned how to use a python script in a terminal")
-    typewriter_print.print_text()
-    typewriter_print = TypewriterPrint('Press any key to continue...')
-    typewriter_print.print_text()
-    input()
 elif directory_name == "yes":
     typewriter_print = TypewriterPrint("File made...")
     typewriter_print.print_text()
     try:
         with open('Answer', 'w', encoding='utf-8') as file: 
-            file.write(" Here is the second part: ꜵꝶﺺ , Now if you move this file to Door10, you will have the last key to enter.")       
+            file.write(" Here is the second part: ꜵꝶﺺ , Now if you move this file to Door10, you will have the last key to enter. Open in a text editor for proper copy. ")       
     except Exception as e:
         # If the file doesn't exist...
         with open('Answer', 'w', encoding='utf-8') as file:
-            file.write(" Here is the second part: ꜵꝶﺺ , Now if you move this file to Door10, you will have the last key to enter.")
+            file.write(" Here is the second part: ꜵꝶﺺ , Now if you move this file to Door10, you will have the last key to enter. Open in a text editor for proper copy.")
 
 #copying script to all directories
 current_directory = os.getcwd()
